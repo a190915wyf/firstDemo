@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyBoardPsEditViewController">
+            <connections>
+                <outlet property="mProgressBg" destination="WvX-F5-iQD" id="JrM-MG-npZ"/>
+                <outlet property="mTableView" destination="G6w-Ul-TC4" id="YpF-Vv-ujd"/>
+                <outlet property="segmentButton" destination="O24-XN-WOT" id="bax-oC-gCX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="G6w-Ul-TC4">
+                    <rect key="frame" x="0.0" y="66" width="320" height="502"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <view key="tableFooterView" contentMode="scaleToFill" id="l48-xg-fLN">
+                        <rect key="frame" x="0.0" y="435" width="320" height="74"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5xM-nu-0KO">
+                                <rect key="frame" x="10" y="15" width="300" height="44"/>
+                                <color key="backgroundColor" red="0.070588238540000001" green="0.58823531870000001" blue="0.76470595600000002" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="完成">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClicked" destination="-1" eventType="touchUpInside" id="ecp-N4-YrS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5xM-nu-0KO" firstAttribute="leading" secondItem="l48-xg-fLN" secondAttribute="leading" constant="10" id="c9Y-Cr-ayf"/>
+                            <constraint firstAttribute="trailing" secondItem="5xM-nu-0KO" secondAttribute="trailing" constant="10" id="cBi-5W-co8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="rPw-4r-F8v"/>
+                        <outlet property="delegate" destination="-1" id="dPA-3Y-Qed"/>
+                    </connections>
+                </tableView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="O24-XN-WOT">
+                    <rect key="frame" x="30" y="73" width="261" height="29"/>
+                    <segments>
+                        <segment title="永久密码"/>
+                        <segment title="期限密码"/>
+                        <segment title="次数密码"/>
+                    </segments>
+                    <connections>
+                        <action selector="segmentedChanged:" destination="-1" eventType="valueChanged" id="Lx9-HV-NWc"/>
+                    </connections>
+                </segmentedControl>
+                <view alpha="0.29999999999999966" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WvX-F5-iQD">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="G6w-Ul-TC4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AA9-1g-k0l"/>
+                <constraint firstItem="O24-XN-WOT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="73" id="AYK-Og-96X"/>
+                <constraint firstAttribute="trailing" secondItem="G6w-Ul-TC4" secondAttribute="trailing" id="OO5-ye-rGd"/>
+                <constraint firstAttribute="centerX" secondItem="O24-XN-WOT" secondAttribute="centerX" id="SSK-51-l4m"/>
+                <constraint firstItem="G6w-Ul-TC4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="66" id="lqL-s5-7JH"/>
+                <constraint firstAttribute="bottom" secondItem="G6w-Ul-TC4" secondAttribute="bottom" id="yB0-9O-ncO"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="345" y="308"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

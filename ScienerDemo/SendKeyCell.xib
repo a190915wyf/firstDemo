@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="FKL-0s-VdP" customClass="SendKeyCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FKL-0s-VdP" id="MbG-uc-d56">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入对方的科技侠帐号请输入对方的科技侠帐号请输入对方的科技侠帐号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AYg-G1-MnB">
+                        <rect key="frame" x="17" y="0.0" width="280" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                        <connections>
+                            <outlet property="delegate" destination="FKL-0s-VdP" id="j1n-6R-9Dv"/>
+                        </connections>
+                    </textField>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXm-aL-IDD">
+                        <rect key="frame" x="96" y="1" width="214" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="623-8B-vBl">
+                        <rect key="frame" x="8" y="0.0" width="97" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="623-8B-vBl" firstAttribute="leading" secondItem="MbG-uc-d56" secondAttribute="leadingMargin" id="E1k-yx-9GD"/>
+                    <constraint firstItem="623-8B-vBl" firstAttribute="top" secondItem="MbG-uc-d56" secondAttribute="topMargin" constant="-8" id="E6H-ip-clZ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="AYg-G1-MnB" secondAttribute="trailing" constant="15" id="JN3-w3-raX"/>
+                    <constraint firstItem="AYg-G1-MnB" firstAttribute="leading" secondItem="MbG-uc-d56" secondAttribute="leadingMargin" constant="9" id="KNC-ub-ks9"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="cXm-aL-IDD" secondAttribute="bottom" constant="-8" id="Wek-pA-IYh"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="cXm-aL-IDD" secondAttribute="trailing" constant="2" id="eaL-Gj-iF5"/>
+                    <constraint firstItem="cXm-aL-IDD" firstAttribute="top" secondItem="MbG-uc-d56" secondAttribute="topMargin" constant="-7" id="rtI-tE-zkX"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="623-8B-vBl" secondAttribute="bottom" constant="-7" id="wcf-Rq-LkW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="text_field" destination="AYg-G1-MnB" id="FFI-Yt-31E"/>
+                <outlet property="text_label" destination="cXm-aL-IDD" id="JdH-9g-s9K"/>
+                <outlet property="text_label_left" destination="623-8B-vBl" id="mRQ-2k-E1X"/>
+            </connections>
+            <point key="canvasLocation" x="395" y="311"/>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,35 @@
+/*
+ Localizable.strings
+ BTstackCocoa
+ 
+ Created by wan on 13-2-20.
+ 
+ */
+
+
+
+
+"tab0_title"="科技侠";
+"words_admin"="管理员";
+"words_user"="普通用户";
+"words_shenfen"="身份：";
+"words_sure_ok"="确定";
+"words_cancel"="取消";
+"words_unlock"="开锁";
+"words_operate"="操作";
+"words_delete"="删除";
+"words_blocked"="冻结";
+"words_unblocked"="解除冻结";
+"alert_title_alert"="温馨提示";
+"words_delete_fail"="删除失败";
+"words_block_fail"="冻结失败";
+"words_unblock_fail"="解除冻结失败";
+"keydetail_item_title_manage"="用户管理";
+"keydetail_item_title_records"="开锁记录";
+"words_no_user"="暂无用户";
+
+"words_year"="年";
+"words_month"="月";
+"words_day"="日";
+"words_hour"="时";
+"words_minute"="分";
